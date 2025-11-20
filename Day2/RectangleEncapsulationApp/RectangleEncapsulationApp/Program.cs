@@ -40,6 +40,7 @@ namespace RectangleEncapsulationApp
 
         private static void PrintInfo(Rectangle[] rectangles)
         {
+
             foreach (Rectangle rectangle in rectangles) {
 
                 Console.WriteLine($"width is {rectangle.GetWidth()}");
