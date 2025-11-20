@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CommandLineArgumentsApp": {
+      "commandName": "Project",
+      "commandLineArgs": "Kannan Alexander Programmer"
+    }
+  }
+}
