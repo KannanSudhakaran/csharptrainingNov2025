@@ -8,7 +8,7 @@ namespace PlayerCounterApp
         {
 
             Player p1 = new Player("Elena");
-             Console.WriteLine(p1.Counter);
+             Console.WriteLine(p1.Counter);//Counter(p1)
             Console.WriteLine(Player.HeadCounter);
 
             Player p2 = new Player("Daniel");
