@@ -6,7 +6,9 @@ namespace CustomerInheritanceApp
     {
         static void Main(string[] args)
         {
-            CaseStudy2();
+            //CaseStudy2();
+
+            CaseStudy1();
         }
 
         private static void CaseStudy2()
@@ -25,7 +27,7 @@ namespace CustomerInheritanceApp
         {
             Customer c1 = new Customer("101", "Daniel");
 
-            Console.WriteLine(c1);
+            Console.WriteLine(c1);//polymorhism
             Console.WriteLine(c1.ToString());
             Console.WriteLine(c1.GetType());
         }

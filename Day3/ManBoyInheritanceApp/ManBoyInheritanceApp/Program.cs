@@ -15,7 +15,28 @@ namespace ManBoyInheritanceApp
             // CaseStudy3();
 
 
-            CaseStudy4();
+            //CaseStudy4();
+
+            CaseStudy5();
+        }
+
+        private static void CaseStudy5()
+        {
+
+            object box;// x expects what??
+
+            box = 100;//value type is converted to object
+
+            Console.WriteLine(box.GetType());
+
+            box = "Hello ";
+            Console.WriteLine(box.GetType());
+
+            box = new Man();
+
+            Man man = box as Man;
+            man.Play();
+            man.Read();
         }
 
         private static void CaseStudy4()
