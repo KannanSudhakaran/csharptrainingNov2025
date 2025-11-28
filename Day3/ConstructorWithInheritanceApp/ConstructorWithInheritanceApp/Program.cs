@@ -8,7 +8,7 @@ namespace ConstructorWithInheritanceApp
         static void Main(string[] args)
         {
 
-            // new ChildOne();
+            //new ChildOne();
 
             ChildTwo x = new ChildTwo();
             Console.WriteLine(x.Age);

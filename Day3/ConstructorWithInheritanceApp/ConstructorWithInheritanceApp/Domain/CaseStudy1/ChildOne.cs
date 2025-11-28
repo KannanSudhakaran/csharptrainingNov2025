@@ -10,7 +10,7 @@ namespace ConstructorWithInheritanceApp.Domain.CaseStudy1
     {
 
         //automatically or implicitly
-        public ChildOne() :base(){
+        public ChildOne() {
             
             Console.WriteLine("Child created");
         

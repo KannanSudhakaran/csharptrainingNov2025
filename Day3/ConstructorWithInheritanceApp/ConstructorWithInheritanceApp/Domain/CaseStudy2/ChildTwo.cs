@@ -9,11 +9,13 @@ namespace ConstructorWithInheritanceApp.Domain.CaseStudy2
 {
     class ChildTwo : ParentTwo
     {
+        
         public ChildTwo() : base(20) { 
         
         
         }
 
+        //constructor overloading
         public ChildTwo(int myage) : base(myage) { 
         
         
