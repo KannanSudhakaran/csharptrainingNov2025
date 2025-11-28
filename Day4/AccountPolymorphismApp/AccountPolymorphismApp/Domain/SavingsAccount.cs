@@ -16,10 +16,15 @@ namespace AccountPolymorphismApp.Domain
 
         public override void Withdraw(double amount)
         {
-            if (_balance - amount >= MIN_BALANCE) { 
-              _balance -= amount;
+            if (_balance - amount >= MIN_BALANCE)
+            {
+                _balance -= amount;
             }
-            //TODO: custom exception need to thrown
+            else
+            {
+                throw new NotSupportedException("Exception from not supported");
+               // throw new AccountInsufficientFundsException(this);
+            }
         }
     }
 }
