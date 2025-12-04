@@ -5,6 +5,16 @@ VisualStudioVersion = 17.14.36121.58 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCPViolationApp", "OCPViolationApp\OCPViolationApp.csproj", "{A1738B37-7794-45F0-82F6-4C5CAF71D1AC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Violation", "Violation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Refactored", "Refactored", "{74BE1271-53AD-49CB-9A7B-E510554E5ACC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcpBankCoreLib", "OcpBankCoreLib\OcpBankCoreLib.csproj", "{33B162EF-4343-4A36-A046-C468F8D90884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldBankApp", "WorldBankApp\WorldBankApp.csproj", "{E20E3800-D222-48A2-8DDB-2DC5DCD526F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityBankApp", "CityBankApp\CityBankApp.csproj", "{092C75AF-F8A3-4864-8C21-07CE5216E590}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +25,27 @@ Global
 		{A1738B37-7794-45F0-82F6-4C5CAF71D1AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1738B37-7794-45F0-82F6-4C5CAF71D1AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1738B37-7794-45F0-82F6-4C5CAF71D1AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B162EF-4343-4A36-A046-C468F8D90884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B162EF-4343-4A36-A046-C468F8D90884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B162EF-4343-4A36-A046-C468F8D90884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B162EF-4343-4A36-A046-C468F8D90884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E20E3800-D222-48A2-8DDB-2DC5DCD526F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E20E3800-D222-48A2-8DDB-2DC5DCD526F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E20E3800-D222-48A2-8DDB-2DC5DCD526F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E20E3800-D222-48A2-8DDB-2DC5DCD526F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092C75AF-F8A3-4864-8C21-07CE5216E590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092C75AF-F8A3-4864-8C21-07CE5216E590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092C75AF-F8A3-4864-8C21-07CE5216E590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092C75AF-F8A3-4864-8C21-07CE5216E590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A1738B37-7794-45F0-82F6-4C5CAF71D1AC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{33B162EF-4343-4A36-A046-C468F8D90884} = {74BE1271-53AD-49CB-9A7B-E510554E5ACC}
+		{E20E3800-D222-48A2-8DDB-2DC5DCD526F2} = {74BE1271-53AD-49CB-9A7B-E510554E5ACC}
+		{092C75AF-F8A3-4864-8C21-07CE5216E590} = {74BE1271-53AD-49CB-9A7B-E510554E5ACC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B67B40C6-6CE8-4457-B353-4EF434E61511}
