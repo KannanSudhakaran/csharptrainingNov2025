@@ -16,7 +16,53 @@ namespace CollectionsAndGenericsApp
 
             //CaseStudy3();
 
-            CaseStudy4();
+            //CaseStudy4();
+
+            CaseStudy5();
+        }
+
+        private static void CaseStudy5()
+        {
+
+            var companyHeadCountMap= new Dictionary<string,int>();
+            // companyHeadCountMap.Add("Microsoft", 10000);
+            // companyHeadCountMap.Add("Microsoft", 10000);
+
+            companyHeadCountMap["Microsoft"] = 10000;
+            companyHeadCountMap["Microsoft"] = 20000;
+            companyHeadCountMap["Google"] = 5000;
+            companyHeadCountMap["OpenAi"] = 1000;
+
+
+            Console.WriteLine(companyHeadCountMap.Count);
+
+            foreach (KeyValuePair<string,int> row in companyHeadCountMap)
+            {
+                Console.WriteLine($" {row.Key} = {row.Value}");
+            }
+
+            int[] numbers=  { 10,10,20,20,10,10,20,30};
+            //display occurance of 10->2
+            // 20 -->3
+
+            var map = new Dictionary<int,int>();
+            foreach (var num in numbers) {
+
+                if (map.ContainsKey(num))
+                {
+                    map[num] += 1;
+                }
+                else
+                    map[num] = 1;
+
+            }
+
+            foreach (var row in map)
+            {
+                Console.WriteLine($" {row.Key}= {row.Value}");
+            }
+
+
         }
 
         private static void CaseStudy4()
