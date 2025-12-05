@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PublisherLib.Domain.Account">
+    <Position X="4.75" Y="1.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EAAgIAgAAAAAAAAAAAgAAAwEAAAAAAAAAAAAAAAAgAI=</HashCode>
+      <FileName>Domain\Account.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Delegate Name="PublisherLib.Domain.DAccountUpdated">
+    <Position X="1.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Account.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
