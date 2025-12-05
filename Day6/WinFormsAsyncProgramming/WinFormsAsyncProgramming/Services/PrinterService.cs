@@ -38,8 +38,30 @@ namespace WinFormsAsyncProgramming.Services
             
             Thread worker = new Thread(() => Print(seconds));
             worker.Start();
-
         
         }
+
+        public void PrintViaTask(int seconds) {
+
+            Task.Run(() => Print(seconds));
+        }
+
+        //task are awaitable
+
+        public Task PrintViaAwaitableTask(int seconds)
+        {
+            return Task.Run(() => Print(seconds));
+        }
+
+        public Task<string> PrintViaTaskWithResult(int seconds)
+        {
+            return Task.Run(() => { 
+            
+            Print(seconds);
+            return "DATA:Success says Alexander";
+
+            });
+        }
+
     }
 }

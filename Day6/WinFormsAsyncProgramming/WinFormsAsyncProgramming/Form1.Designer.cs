@@ -31,6 +31,9 @@
             btnPrint = new Button();
             btnHello = new Button();
             btnThread = new Button();
+            btnTask = new Button();
+            btnAwaitable = new Button();
+            btnResult = new Button();
             SuspendLayout();
             // 
             // btnPrint
@@ -55,7 +58,7 @@
             // 
             // btnThread
             // 
-            btnThread.Location = new Point(114, 171);
+            btnThread.Location = new Point(104, 172);
             btnThread.Name = "btnThread";
             btnThread.Size = new Size(112, 34);
             btnThread.TabIndex = 2;
@@ -63,11 +66,44 @@
             btnThread.UseVisualStyleBackColor = true;
             btnThread.Click += btnThread_Click;
             // 
+            // btnTask
+            // 
+            btnTask.Location = new Point(257, 172);
+            btnTask.Name = "btnTask";
+            btnTask.Size = new Size(112, 34);
+            btnTask.TabIndex = 3;
+            btnTask.Text = "Task";
+            btnTask.UseVisualStyleBackColor = true;
+            btnTask.Click += btnTask_Click;
+            // 
+            // btnAwaitable
+            // 
+            btnAwaitable.Location = new Point(104, 238);
+            btnAwaitable.Name = "btnAwaitable";
+            btnAwaitable.Size = new Size(144, 45);
+            btnAwaitable.TabIndex = 4;
+            btnAwaitable.Text = "AwaitableTask";
+            btnAwaitable.UseVisualStyleBackColor = true;
+            btnAwaitable.Click += btnAwaitable_Click;
+            // 
+            // btnResult
+            // 
+            btnResult.Location = new Point(317, 251);
+            btnResult.Name = "btnResult";
+            btnResult.Size = new Size(213, 47);
+            btnResult.TabIndex = 5;
+            btnResult.Text = "AwaitableResult";
+            btnResult.UseVisualStyleBackColor = true;
+            btnResult.Click += btnResult_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnResult);
+            Controls.Add(btnAwaitable);
+            Controls.Add(btnTask);
             Controls.Add(btnThread);
             Controls.Add(btnHello);
             Controls.Add(btnPrint);
@@ -82,5 +118,8 @@
         private Button btnPrint;
         private Button btnHello;
         private Button btnThread;
+        private Button btnTask;
+        private Button btnAwaitable;
+        private Button btnResult;
     }
 }
