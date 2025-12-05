@@ -34,6 +34,8 @@
             btnTask = new Button();
             btnAwaitable = new Button();
             btnResult = new Button();
+            btnApiCall = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // btnPrint
@@ -88,7 +90,7 @@
             // 
             // btnResult
             // 
-            btnResult.Location = new Point(317, 251);
+            btnResult.Location = new Point(461, 104);
             btnResult.Name = "btnResult";
             btnResult.Size = new Size(213, 47);
             btnResult.TabIndex = 5;
@@ -96,11 +98,31 @@
             btnResult.UseVisualStyleBackColor = true;
             btnResult.Click += btnResult_Click;
             // 
+            // btnApiCall
+            // 
+            btnApiCall.Location = new Point(400, 216);
+            btnApiCall.Name = "btnApiCall";
+            btnApiCall.Size = new Size(150, 67);
+            btnApiCall.TabIndex = 6;
+            btnApiCall.Text = "API Call";
+            btnApiCall.UseVisualStyleBackColor = true;
+            btnApiCall.Click += btnApiCall_Click;
+            // 
+            // label1
+            // 
+            label1.Location = new Point(201, 326);
+            label1.Name = "label1";
+            label1.Size = new Size(638, 175);
+            label1.TabIndex = 7;
+            label1.Text = "label1";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(945, 510);
+            Controls.Add(label1);
+            Controls.Add(btnApiCall);
             Controls.Add(btnResult);
             Controls.Add(btnAwaitable);
             Controls.Add(btnTask);
@@ -121,5 +143,7 @@
         private Button btnTask;
         private Button btnAwaitable;
         private Button btnResult;
+        private Button btnApiCall;
+        private Label label1;
     }
 }

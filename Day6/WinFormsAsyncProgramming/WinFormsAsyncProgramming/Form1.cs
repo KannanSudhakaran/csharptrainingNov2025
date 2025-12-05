@@ -51,8 +51,18 @@ namespace WinFormsAsyncProgramming
 
         private async void btnResult_Click(object sender, EventArgs e)
         {
-          string result= await  _printerService.PrintViaTaskWithResult(10);
-          MessageBox.Show(result +" , after 10 seconds");
+            string result = await _printerService.PrintViaTaskWithResult(10);
+            MessageBox.Show(result + " , after 10 seconds");
+        }
+
+        private async void btnApiCall_Click(object sender, EventArgs e)
+        {
+            string url = "https://ks-testapi-keonig.azurewebsites.net/api/v1/WeatherForecast";
+
+            HttpClient client = new HttpClient();
+           string result= await client.GetStringAsync(url);
+          //  MessageBox.Show(result);
+            label1.Text= result;
         }
     }
 }
